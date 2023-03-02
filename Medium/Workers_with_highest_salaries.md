@@ -11,7 +11,7 @@
 
 &nbsp;
 
-## Exoected Output
+## Expected Output
 
 <div id="header" align="center">
   <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/workers_highest_salaries_3.png" />
