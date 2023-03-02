@@ -12,8 +12,10 @@ In this repository you will find my answers to the SQL challenges proposed on th
 
 #### **Medium level**
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
-<img src="https://i.gifer.com/origin/82/82a1ed531e333926a8ca2a00c277e0d1.gif" width="400" height="400" />
 
+<div id="header" align="center">
+  <img src="https://i.gifer.com/origin/82/82a1ed531e333926a8ca2a00c277e0d1.gif" />
+</div>
 
 &nbsp;
 ## Feedback
