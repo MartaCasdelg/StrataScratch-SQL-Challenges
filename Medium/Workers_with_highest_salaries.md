@@ -1,7 +1,15 @@
 # Workers with the highest salaries
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/SQL-HackerRank-Solutions/blob/main/1.%20Basic/Images/average_population.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/workers_highest_salaries_1.png" />
+</div>
+
+<div id="header" align="center">
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/workers_highest_salaries_2.png" />
+</div>
+
+<div id="header" align="center">
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/workers_highest_salaries_3.png" />
 </div>
 
 &nbsp;
@@ -30,6 +38,10 @@ WHERE
 To find the position of the highest paid person or persons in the company I have created a temporary table where I have assigned a ranking number to each employee based on their salary. Having this table, we can join it to the title table, which contains the name of the position of each employee and use the WHERE clause to find the position that occupies position 1 in the ranking. 
 
 In this case we obtain that both the manager and the assistant manager receive the highest salaries.
+
+<div id="header" align="center">
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/workers_highest_salaries_output.png" />
+</div>
 
 &nbsp;
 
