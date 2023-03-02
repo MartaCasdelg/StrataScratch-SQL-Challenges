@@ -1,7 +1,7 @@
 
 ![StrataScratch](https://cdn.sanity.io/images/oaglaatp/production/b43ef4b31b5558ae043ba07a99a423e7bf58d8b1-1200x400.png?w=1200&h=400&auto=format)
 
-<h1 style="text-align: center;">**SQL Challenges**</h1>
+<h1 style="text-align: center;">SQL Challenges</h1>
 
 ![Challenges](https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
 
@@ -12,9 +12,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 
 #### **Medium level**
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
-
-![Workinginprogress2](https://i.gifer.com/origin/82/82a1ed531e333926a8ca2a00c277e0d1.gif)
-<img src="https://i.gifer.com/origin/82/82a1ed531e333926a8ca2a00c277e0d1.gif" width="40" height="40" />
+<img src="https://i.gifer.com/origin/82/82a1ed531e333926a8ca2a00c277e0d1.gif" width="400" height="400" />
 
 
 &nbsp;
