@@ -11,7 +11,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
 
 <div id="header" align="center">
-  <img src="https://i.gifer.com/origin/82/82a1ed531e333926a8ca2a00c277e0d1.gif" />
+  <img src="https://i.pinimg.com/originals/65/2d/ec/652decead49f9d5c34a31285c49dd3e3.gif" />
 </div>
 
 &nbsp;
