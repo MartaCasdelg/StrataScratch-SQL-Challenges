@@ -52,8 +52,6 @@ In this case we obtain that both the manager and the assistant manager receive t
 
 ## Solution 2:
 
-Solution 2:
-
 Another solution would be to create a subquery within the where statement to select the positions whose salary is equal to the maximum of the worker table.
 
 ```sql
