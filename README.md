@@ -10,6 +10,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 #### **Medium level**
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
 
+&nbsp;
 <div id="header" align="center">
   <img src="https://i.pinimg.com/originals/65/2d/ec/652decead49f9d5c34a31285c49dd3e3.gif" />
 </div>
