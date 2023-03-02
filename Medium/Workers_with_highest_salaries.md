@@ -8,6 +8,11 @@
   <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/workers_highest_salaries_2.png" />
 </div>
 
+
+&nbsp;
+
+## Exoected Output
+
 <div id="header" align="center">
   <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/workers_highest_salaries_3.png" />
 </div>
