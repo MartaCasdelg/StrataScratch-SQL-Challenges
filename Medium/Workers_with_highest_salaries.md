@@ -33,7 +33,7 @@ WITH best_paid AS(
 )
 
 SELECT
-    title.worker_title
+    title.worker_title AS best_paid_title
 FROM
     best_paid JOIN
     title ON best_paid.worker_id = title.worker_ref_id
