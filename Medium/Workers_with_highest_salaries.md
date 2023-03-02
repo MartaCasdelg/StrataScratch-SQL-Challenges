@@ -24,12 +24,13 @@
 
 ```sql
 WITH best_paid AS(
-SELECT
-    worker_id,
-    salary,
-    DENSE_RANK() OVER (ORDER BY salary DESC) AS rank
-FROM
-    worker)
+    SELECT
+        worker_id,
+        salary,
+        DENSE_RANK() OVER (ORDER BY salary DESC) AS rank
+    FROM
+        worker
+)
 
 SELECT
     title.worker_title
