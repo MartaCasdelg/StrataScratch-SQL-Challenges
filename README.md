@@ -1,7 +1,4 @@
-
-![StrataScratch](https://cdn.sanity.io/images/oaglaatp/production/b43ef4b31b5558ae043ba07a99a423e7bf58d8b1-1200x400.png?w=1200&h=400&auto=format)
-
-<h1 style="text-align: center;">SQL Challenges</h1>
+# StrataScratch SQL Challenges
 
 ![Challenges](https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
 
