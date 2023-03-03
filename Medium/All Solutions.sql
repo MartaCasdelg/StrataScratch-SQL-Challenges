@@ -16,7 +16,7 @@ FROM
 WHERE
     rank = 1;
 
---Second solution:
+--Other solution:
 SELECT
     title.worker_title
 FROM
