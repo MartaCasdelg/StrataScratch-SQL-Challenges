@@ -26,6 +26,7 @@ WHERE
     worker.salary = (SELECT MAX(salary) FROM worker);
 
 
+
 -- Finding User Purchases
 WITH previous_purchases AS (
     SELECT
@@ -44,3 +45,20 @@ WHERE
     DATE_PART('day', created_at::timestamp - previous_purchase::timestamp) < 8
 ORDER BY
     user_id;
+
+
+
+-- Classify Business Type
+SELECT DISTINCT
+    business_name,
+    CASE
+        WHEN LOWER(business_name) LIKE '%restaurant%' THEN 'restaurant'
+        WHEN LOWER(business_name) LIKE '%cafe%' OR 
+             LOWER(business_name) LIKE'%café%' OR 
+             LOWER(business_name) LIKE'%coffee%'
+            THEN 'cafe'
+        WHEN LOWER(business_name) LIKE '%school%' THEN 'school'
+        ELSE 'other'
+    END AS business_type
+FROM
+    sf_restaurant_health_violations;
