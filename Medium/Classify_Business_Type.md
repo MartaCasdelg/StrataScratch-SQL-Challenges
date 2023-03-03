@@ -1,11 +1,11 @@
 # Classify Business Type
 
 <div id="header" align="center">
-  <img src="./Medium/Images/classify_business_type_1.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/classify_business_type_1.png" />
 </div>
 
 <div id="header" align="center">
-  <img src="./Medium/Images/classify_business_type_2.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/classify_business_type_2.png" />
 </div>
 
 &nbsp;
@@ -14,7 +14,7 @@
 ## Expected Output
 
 <div id="header" align="center">
-  <img src="./Medium/Images/classify_business_type_3.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/classify_business_type_3.png" />
 </div>
 
 &nbsp;
@@ -47,5 +47,5 @@ On the other hand, it should be noted that in the question we are told that the 
 By doing this I obtain the expected result.
 
 <div id="header" align="center">
-  <img src="./Medium/Images/classify_business_type_output.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/classify_business_type_output.png" />
 </div>
