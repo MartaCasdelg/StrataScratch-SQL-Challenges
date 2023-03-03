@@ -9,6 +9,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 
 #### **Medium level**
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
+* [Finding user purchases](./Medium/Finding_users_purchases.md)
 
 &nbsp;
 <div id="header" align="center">
