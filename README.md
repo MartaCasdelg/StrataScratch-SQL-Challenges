@@ -7,6 +7,10 @@
 ## Description
 In this repository you will find my answers to the SQL challenges proposed on the StrataScratch website. The available questions are listed below. Each link leads to the document containing both the question statement and the answer, written mainly in PostgreSQL.
 
+#### **Easy level**
+* [Count the number of companies in the Information Technology sector in each country](./Easy/Number_of_companies_IT_sector_by_country.md)
+
+
 #### **Medium level**
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
 * [Finding user purchases](./Medium/Finding_users_purchases.md)
