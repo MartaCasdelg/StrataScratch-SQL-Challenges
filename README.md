@@ -11,6 +11,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
 * [Finding user purchases](./Medium/Finding_users_purchases.md)
 * [Classify business type](./Medium/Classify_Business_Type.md)
+* [Most profitable companies](./Medium/Most_profitable_companies.md)
 
 &nbsp;
 <div id="header" align="center">
