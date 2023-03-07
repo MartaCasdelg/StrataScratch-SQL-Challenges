@@ -62,3 +62,15 @@ SELECT DISTINCT
     END AS business_type
 FROM
     sf_restaurant_health_violations;
+
+
+
+-- Most Profitable Companies
+SELECT 
+    company,
+    profits
+FROM
+    forbes_global_2010_2014
+ORDER BY
+    RANK() OVER (ORDER BY profits DESC)
+LIMIT 3;
