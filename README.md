@@ -17,6 +17,9 @@ In this repository you will find my answers to the SQL challenges proposed on th
 * [Classify business type](./Medium/Classify_Business_Type.md)
 * [Most profitable companies](./Medium/Most_profitable_companies.md)
 
+#### **Hard level**
+* [Counting Instances in Text](./Hard/Counting_instances_in_text.md)
+
 &nbsp;
 <div id="header" align="center">
   <img src="https://i.pinimg.com/originals/65/2d/ec/652decead49f9d5c34a31285c49dd3e3.gif" />
