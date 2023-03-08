@@ -74,3 +74,43 @@ FROM
 ORDER BY
     RANK() OVER (ORDER BY profits DESC)
 LIMIT 3;
+
+
+
+-- Users by Average Session Time
+WITH page_loads AS (
+    SELECT
+        user_id,
+        DATE(timestamp) AS date,
+        MAX(timestamp) AS latest_page_load
+    FROM
+        facebook_web_log
+    WHERE
+        action = 'page_load'
+    GROUP BY
+        user_id,
+        DATE(timestamp)
+),
+
+page_exits AS (
+    SELECT
+        user_id,
+        DATE(timestamp) AS date,
+        MIN(timestamp) AS earliest_page_exit
+    FROM
+        facebook_web_log
+    WHERE
+        action = 'page_exit'
+    GROUP BY
+        user_id,
+        DATE(timestamp)
+)
+
+SELECT 
+    e.user_id,
+    AVG(earliest_page_exit - latest_page_load) AS avg
+FROM
+    page_exits e LEFT JOIN
+    page_loads l ON l.user_id = e.user_id AND l.date = e.date
+GROUP BY
+    e.user_id;
