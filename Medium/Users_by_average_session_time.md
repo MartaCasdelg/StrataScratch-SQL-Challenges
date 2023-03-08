@@ -66,9 +66,13 @@ Having these two tables, I join them together to find the average of the differe
 
 The type of join between the tables is LEFT JOIN (an INNER JOIN would also have been useful in this case) because I am interested in getting the records of users who have both logged in and logged out of the site. If we run the two temporary tables separately we will notice that there is a user_id 2 in the load table that does not appear in the output table. I am not interested in this user because I cannot get his session time until he has left the page.
 
+&nbsp;
+
 <div id="header" align="center">
   <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/users_by_average_session_time_3.png" />
 </div>
+
+&nbsp;
 
 However, there is something very important to keep in mind about the way the boards are joined. We cannot simply use the user_id to create the join as there are repeated values in this field. This is because a user may have logged in or logged out on different days. 
 
