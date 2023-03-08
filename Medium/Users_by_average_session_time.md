@@ -67,7 +67,7 @@ The type of join between the tables is LEFT JOIN (an INNER JOIN would also have 
 &nbsp;
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/users_by_average_session_time_3.png"  width="600" height="400" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/users_by_average_session_time_3.png"  width="600" height="500" />
 </div>
 
 &nbsp;
