@@ -16,6 +16,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 * [Finding user purchases](./Medium/Finding_users_purchases.md)
 * [Classify business type](./Medium/Classify_Business_Type.md)
 * [Most profitable companies](./Medium/Most_profitable_companies.md)
+* [Users by average session time](./Medium/Users_by_average_session_time.md)
 
 #### **Hard level**
 * [Counting Instances in Text](./Hard/Counting_instances_in_text.md)
