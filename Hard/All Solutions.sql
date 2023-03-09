@@ -14,7 +14,7 @@ WITH revenue_by_date AS (
     SELECT
         to_char(created_at, 'YYYY-MM') AS date,
         SUM(value) AS revenue,
-        LAG(SUM(value), 1) OVER () as revenue_last_month
+        LAG(SUM(value), 1) OVER () AS revenue_last_month
     FROM
         sf_transactions
     GROUP BY
