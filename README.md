@@ -9,6 +9,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 
 #### **Easy level**
 * [Count the number of companies in the Information Technology sector in each country](./Easy/Number_of_companies_IT_sector_by_country.md)
+* [Salaries differences](./Easy/salaries_differences.md)
 
 
 #### **Medium level**
