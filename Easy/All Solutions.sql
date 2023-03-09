@@ -17,3 +17,24 @@ FROM
     forbes_global_2010_2014
 WHERE
     sector = 'Information Technology';
+
+
+
+-- Salaries Differences
+WITH cte AS (
+    SELECT
+        d.department,
+        MAX(e.salary) AS salary
+    FROM
+        db_employee e JOIN
+        db_dept d ON e.department_id = d.id
+    WHERE
+        d.department IN ('marketing', 'engineering')
+    GROUP BY
+        d.department
+)
+
+SELECT
+    MAX(salary) - MIN(salary) AS salary_difference
+FROM
+    cte;
