@@ -1,7 +1,7 @@
 # Monthly percentage difference
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/monthly_percentage_change_1.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/Monthly_percentage_change_1.png" />
 </div>
 
 &nbsp;
