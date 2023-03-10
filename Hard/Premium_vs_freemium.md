@@ -68,6 +68,11 @@ SELECT
 ```
 When using an aggregate function, it is necessary to use the GROUP BY function to group the results, in this case, by date.
 
+```sql
+GROUP BY
+    d.date
+```
+
 Apart from that, **two more requirements are missing**. On the one hand, the problem specified that the result should **show only those records where the sum of downloads of non-paying users is greater than those of paying users**.
 
 To fulfill this requirement it is very important to take into account the SQL order of query execution:
