@@ -22,6 +22,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 #### **Hard level**
 * [Counting Instances in Text](./Hard/Counting_instances_in_text.md)
 * [Monthly Percentage Difference](./Hard/Monthly_percentage_difference.md)
+* [Premium vs Freemium](./Hard/Premium_vs_freemium.md)
 
 &nbsp;
 <div id="header" align="center">
