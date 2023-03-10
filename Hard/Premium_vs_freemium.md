@@ -80,7 +80,7 @@ To fulfill this requirement it is very important to take into account the SQL or
 &nbsp;
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/premium_vs_freemium_4.png" height="300" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/premium_vs_freemium_4.png" height="250" />
 </div>
 
 &nbsp;
