@@ -58,9 +58,7 @@ Once this is done, we have the columns we are interested in. That is, the column
 
 The problem requires that the output contains a column with the dates, the number of downloads by non-paying users and another with the number of downloads made by paying users. 
 
-Then, the **date** column is in the ms_download_facts table, which I have renamed to d. That is why in the SELECT clause it appears as d.date.
-
-On the other hand, you can get the **sum of downloads for each user type** using the **FILTER()** function. This function allows you to filter the result of an aggregate function, as is in this case the SUM() function. As a parameter, we indicate that the filtering condition is that the paying_customer column is equal to 'no', in the case  of non-paying users, and 'yes', for paying users. Then, the SELECT clause is as follows:
+Then, the **date** column is in the ms_download_facts table, which I have renamed to d. That is why in the SELECT clause it appears as d.date. On the other hand, you can get the **sum of downloads for each user type** using the **FILTER()** function. This function allows you to filter the result of an aggregate function, as is in this case the SUM() function. As a parameter, we indicate that the filtering condition is that the paying_customer column is equal to 'no', in the case  of non-paying users, and 'yes', for paying users. Then, the SELECT clause is as follows:
 
 ```sql
 SELECT
