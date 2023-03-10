@@ -72,9 +72,13 @@ Apart from that, **two more requirements are missing**. On the one hand, the pro
 
 To fulfill this requirement it is very important to take into account the SQL order of query execution:
 
+&nbsp;
+
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/premium_vs_freemium_4.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/premium_vs_freemium_4.png" height="400" />
 </div>
+
+&nbsp;
 
 If you notice, the **SELECT clause is executed in fifth place**, while WHERE is in second place. This means that **I cannot use the columns non_paying_downloads and paying_downloads in a WHERE clause** because they are created after the filtering is applied.
 
@@ -91,6 +95,9 @@ Finally, the output should be sorted by earliest date first.
 ORDER BY
     d.date;
 ```
+
+&nbsp;
+
 Executing the **whole query**, I get the expected result:
 
 <div id="header" align="center">
