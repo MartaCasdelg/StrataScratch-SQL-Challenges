@@ -112,7 +112,7 @@ FROM
 To better understand this, I will show what you would get if you run a query in which you select all the records from both tables, joined by a LEFT JOIN. It would be the following:
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/acceptance_rate_by_date_3.png" height="250" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/acceptance_rate_by_date_3.png" height="400" />
 </div>
 
 You can see how, **for those requests that were not accepted, null records are displayed. Thanks to this, if we use a COUNT() function on this column we will obtain the total of accepted requests**, as COUNT() count the number of non-NULL items in the specified column. On the other hand, if we use the function on any of the columns that belongs to the 'sent' table, we get the number of total requests.
