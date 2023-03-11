@@ -12,7 +12,6 @@ In this repository you will find my answers to the SQL challenges proposed on th
 * [Salaries differences](./Easy/salaries_differences.md)
 * [Finding updated records](./Easy/Finding_updated_records.md)
 
-
 #### **Medium level**
 * [Workers with the highest salaries](./Medium/Workers_with_highest_salaries.md) 
 * [Finding user purchases](./Medium/Finding_users_purchases.md)
