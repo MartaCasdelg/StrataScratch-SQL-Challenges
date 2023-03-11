@@ -52,11 +52,9 @@ GROUP BY
     s.date;
 ```
 
-This problem asks for the overall friend acceptance rate by date, which is calculated as the division between the number of accepted requests and the total number of requests created.
+This problem asks for the overall friend acceptance rate by date, which is calculated as the division between the number of accepted requests and the total number of requests created. The statement of the exercise asks us to group the results by date. Specifically, it refers to the dates on which the requests are created since a request can be accepted on a date other than the one on which it was received.
 
-The statement of the exercise asks us to group the results by date. Specifically, it refers to the dates on which the requests are created since a request can be accepted on a date other than the one on which it was received.
-
-Next, **I will break down the query at the top to explain how it works**.
+Now, **I will break down the query at the top to explain how it works**.
 
 First, I create **two temporary tables** (CTEs). The **first one contains all the requests sent** regardless of whether they were finally accepted or not. To filter the records of the original table, I use the WHERE clause and indicate that I want the rows where action is equal to 'sent'.
 
