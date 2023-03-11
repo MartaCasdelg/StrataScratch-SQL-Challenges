@@ -114,3 +114,38 @@ FROM
     page_loads l ON l.user_id = e.user_id AND l.date = e.date
 GROUP BY
     e.user_id;
+
+
+
+-- Acceptance Rate by Date
+WITH sent AS (
+    SELECT
+        date,
+        user_id_sender,
+        user_id_receiver
+    FROM 
+        fb_friend_requests
+    WHERE
+        action = 'sent'
+),
+
+accepted AS (
+    SELECT
+        user_id_sender,
+        user_id_receiver
+    FROM 
+        fb_friend_requests
+    WHERE
+        action = 'accepted'
+)
+
+SELECT
+    s.date,
+    (COUNT(a.user_id_receiver)/(COUNT(s.user_id_sender))::decimal) AS percentage_acceptance
+FROM
+    sent s LEFT JOIN
+    accepted a ON 
+        s.user_id_sender = a.user_id_sender AND
+        s.user_id_receiver = a.user_id_receiver
+GROUP BY
+    s.date;
