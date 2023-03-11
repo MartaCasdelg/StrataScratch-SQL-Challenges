@@ -131,7 +131,7 @@ GROUP BY
     s.date;
 ```
 
-When executing the query, I get the desired result:
+When executing the **whole query**, I get the desired result:
 
 <div id="header" align="center">
   <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Medium/Images/acceptance_rate_by_date_output.png" />
