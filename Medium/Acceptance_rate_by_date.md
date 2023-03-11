@@ -117,7 +117,7 @@ To better understand this, I will show what you would get if you run a query in 
 
 You can see how, **for those requests that were not accepted, null records are displayed. Thanks to this, if we use a COUNT() function on this column we will obtain the total of accepted requests**, as COUNT() count the number of non-NULL items in the specified column. On the other hand, if we use the function on any of the columns that belongs to the 'sent' table, we get the number of total requests.
 
-And that's exactly what I do in the SELECT clause, where in addition to selecting the date from the 'sent' table, I calculate the overall rate of acceptance of friends. At the same time, I convert one of the columns to decimal type to match what the problem asks for.
+And that's exactly what I do in the SELECT clause, where in addition to selecting the date from the 'sent' table, I calculate the overall rate of acceptance of friends by using this function. At the same time, I convert one of the columns to decimal type to match what the problem asks for.
 
 ```sql
 SELECT
