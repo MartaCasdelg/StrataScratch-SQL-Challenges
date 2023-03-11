@@ -38,3 +38,22 @@ SELECT
     MAX(salary) - MIN(salary) AS salary_difference
 FROM
     cte;
+
+
+
+-- Finding updated records
+SELECT
+    id,
+    first_name,
+    last_name, 
+    department_id,
+    MAX(salary) as actual_salary
+FROM
+    ms_employee_salary
+GROUP BY
+    id,
+    first_name,
+    last_name, 
+    department_id
+ORDER BY
+    id ASC;
