@@ -130,6 +130,7 @@ Since aggregation functions are being used, I add the GROUP BY clause and indica
 GROUP BY
     s.date;
 ```
+&nbsp;
 
 When executing the **whole query**, I get the desired result:
 
