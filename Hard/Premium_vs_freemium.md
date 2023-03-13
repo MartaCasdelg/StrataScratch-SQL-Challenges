@@ -26,12 +26,9 @@ SELECT
     d.date,
     SUM(d.downloads) FILTER (WHERE a.paying_customer = 'no') AS non_paying_downloads,
     SUM(d.downloads) FILTER (WHERE a.paying_customer = 'yes') AS paying_downloads
-FROM 
-    ms_download_facts d 
-    JOIN ms_user_dimension u 
-        ON d.user_id = u.user_id 
-    JOIN ms_acc_dimension a
-        ON u.acc_id = a.acc_id
+FROM ms_download_facts d 
+JOIN ms_user_dimension u ON d.user_id = u.user_id 
+JOIN ms_acc_dimension a ON u.acc_id = a.acc_id
 GROUP BY
     d.date
 HAVING
@@ -41,17 +38,19 @@ ORDER BY
     d.date;
 ```
 
+&nbsp;
+
+
+## Explanation:
+
 This problem asks to **find the number of downloads made by paying and non-paying users, for those dates when the number of downloads of freemium users were higher than those of premium users**. This query allows to obtain the expected result. I will break it down below to explain **how it works**.
 
 First, it is important to note that there are **three different tables**. They can be joined using the JOIN clause via the user_id and acc_id columns.
 
 ```sql
-FROM 
-    ms_download_facts d 
-    JOIN ms_user_dimension u 
-        ON d.user_id = u.user_id 
-    JOIN ms_acc_dimension a
-        ON u.acc_id = a.acc_id
+FROM ms_download_facts d 
+JOIN ms_user_dimension u ON d.user_id = u.user_id 
+JOIN ms_acc_dimension a ON u.acc_id = a.acc_id
 ```
 
 Once this is done, we have the columns we are interested in. That is, the columns paying_customer (varchar), which defines if the user is premium or freemium (yes/no), date and downloads.
