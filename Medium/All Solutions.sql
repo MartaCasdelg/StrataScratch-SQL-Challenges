@@ -149,3 +149,25 @@ FROM
         s.user_id_receiver = a.user_id_receiver
 GROUP BY
     s.date;
+
+
+
+-- Highest Target Under Manager
+WITH ranking AS (
+    SELECT
+        first_name,
+        target,
+        DENSE_RANK() OVER (ORDER BY target DESC) AS rank
+    FROM
+        salesforce_employees
+    WHERE
+        manager_id = 13
+)
+
+SELECT
+    first_name,
+    target
+FROM 
+    ranking
+WHERE
+    rank = 1;
