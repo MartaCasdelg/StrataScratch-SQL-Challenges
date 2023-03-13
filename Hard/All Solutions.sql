@@ -49,3 +49,30 @@ HAVING
         > SUM(d.downloads) FILTER (WHERE a.paying_customer = 'yes')
 ORDER BY
     d.date;
+
+
+
+-- Popularity percentage
+WITH all_friends AS (
+    SELECT
+        user1,
+        user2
+    FROM
+        facebook_friends
+    UNION
+    SELECT
+        user2 AS user1,
+        user1 AS user2
+    FROM
+        facebook_friends
+)
+
+SELECT 
+    user1,
+    (COUNT(DISTINCT user2)::decimal/(SELECT COUNT(DISTINCT user1) FROM all_friends))*100 AS popularity_percent
+FROM
+    all_friends
+GROUP BY
+    user1
+ORDER BY
+    user1;
