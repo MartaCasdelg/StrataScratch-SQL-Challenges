@@ -38,6 +38,10 @@ FROM
     sf_restaurant_health_violations;
 ```
 
+&nbsp;
+
+## Explanation:
+
 In order to classify the restaurants, I have used the CASE function, which returns a result if a certain condition is met. In this case, that the name of the business contains a keyword, from which it is categorized as restaurant, cafe, school or other. 
 
 It is important to note that businesses can have these keywords written in several ways. With all letters in uppercase, the first letter in uppercase and the rest in lowercase, only lowercase, .... To solve this problem I apply the LOWER function to the business_name column inside the CASE. 

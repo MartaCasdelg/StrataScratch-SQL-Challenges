@@ -29,6 +29,10 @@ ORDER BY
 LIMIT 3;
 ```
 
+&nbsp;
+
+## Explanation:
+
 To obtain the top 3 companies with the best profits, I used the RANK() function to create the ranking based on the value of the profits column. 
 
 RANK() is a window function, so it occupies the sixth position in terms of order of operations. This means that it cannot be included within FROM, WHERE, GROUP BY or HAVING clauses. Consequently, I have used it within the ORDER BY clause, since the expected output does not include the number of the position in the ranking, but the name of the company and the value of its profits. When executing the query we get the expected result:

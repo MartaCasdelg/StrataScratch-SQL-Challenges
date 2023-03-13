@@ -26,6 +26,9 @@ FROM
 WHERE
     word IN ('bull', 'bear');
 ```
+&nbsp;
+
+## Explanation:
 
 To get the number of times the words 'bull' and 'bear' are mentioned in the contents column, I used the ts_stat function. This function executes a query and returns statistics about each word contained in the query result. 
 

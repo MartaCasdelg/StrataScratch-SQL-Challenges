@@ -41,6 +41,11 @@ WHERE
     rank = 1;
 ```
 
+&nbsp;
+
+## Explanation:
+
+
 To find the position of the highest paid person or persons in the company I have created a temporary table where I have assigned a ranking number to each employee based on their salary. Having this table, we can join it to the title table, which contains the name of the position of each employee and use the WHERE clause to find the position that occupies position 1 in the ranking. 
 
 In this case we obtain that both the manager and the assistant manager receive the highest salaries.

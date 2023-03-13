@@ -37,6 +37,9 @@ SELECT
 FROM
     cte;
 ```
+&nbsp;
+
+## Explanation:
 
 In this case, I created a temporary table to obtain the maximum salary within the marketing and engineering departments. In order to filter the table by departments, it was necessary to join the two available tables using the id of the department. That done, the temporary table holds two records, each with the maximum salary in the respective department. 
 

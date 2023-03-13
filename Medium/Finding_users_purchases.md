@@ -37,6 +37,11 @@ WHERE
 ORDER BY
     user_id;
 ```
+
+&nbsp;
+
+## Explanation:
+
 To obtain a list with the ids of users that have made a second purchase within 7 days of any other of their purchases I have created a temporary table to, in a new column, place the date of the purchase prior to the current one.
 
 Specifically, I have used the LAG function, which is a window function used to access the row that comes before the current row within a specific offset. In this case, LAG() acts on the created_at column and fetches the value of that same column, but from the row before the one being evaluated (offset = 1). At the same time, with PARTITION BY I make sure that the function is applied taking into account sets of rows belonging to the same client. ORDER BY is used to sort this set of rows according to the date of creation of the purchase.

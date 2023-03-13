@@ -35,6 +35,9 @@ GROUP BY
 ORDER BY
     id ASC;
 ```
+&nbsp;
+
+## Explanation:
 
 The MAX() function can be used to obtain the current salary of each employee, since the statement tells us to assume that salaries are increasing over time. Therefore, the current salary of each employee is the highest available in the table.
 

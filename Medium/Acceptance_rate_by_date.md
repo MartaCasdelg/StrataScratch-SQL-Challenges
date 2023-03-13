@@ -51,6 +51,9 @@ FROM
 GROUP BY
     s.date;
 ```
+&nbsp;
+
+## Explanation:
 
 This problem asks for the overall friend acceptance rate by date, which is calculated as the division between the number of accepted requests and the total number of requests created. The statement of the exercise asks us to group the results by date. Specifically, it refers to the dates on which the requests are created since a request can be accepted on a date other than the one on which it was received.
 

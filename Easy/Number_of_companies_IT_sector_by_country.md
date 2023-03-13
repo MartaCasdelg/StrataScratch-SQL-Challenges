@@ -27,6 +27,9 @@ WHERE
 GROUP BY
     country;
 ```
+&nbsp;
+
+## Explanation:
 
 To obtain the result, we can simply select the country and use the count function to find the number of companies, grouping the results by each country and filtering so only companies in the information technology sector are shown.
 

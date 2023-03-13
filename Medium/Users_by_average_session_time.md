@@ -56,6 +56,11 @@ FROM
 GROUP BY
     e.user_id;
 ```
+
+&nbsp;
+
+## Explanation:
+
 The problem asks us to find the average session time of each user in the database. To obtain it, I first create two temporary tables (CTEs). The first one (page_loads) contains the id of each user, the date in day format and the timestamp of the moment when the user loaded the page. The second one (page_exits), on the other hand, contains the same data but for the time when the user leaves the page.  
 
 It is important to note that the problem tells us to assume a user has only 1 session per day and if there are multiple of the same events on that day, consider only the latest page_load and earliest page_exit. To meet this requirement I use the MAX() function to get the latest page_load and MIN() to get the earliest page_exit.

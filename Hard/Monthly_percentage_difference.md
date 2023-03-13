@@ -37,7 +37,12 @@ SELECT
 FROM
     revenue_by_date;
 ```
-Next, **I will break down the query into parts to explain how it works**:
+
+&nbsp;
+
+## Explanation:
+
+Now, **I will break down the query into parts to explain how it works**:
 
 To get the percentage change in revenue month to month, I first create a **temporary table with the date, revenue and previous month's revenue columns**. The **date** column is found from the PostgreSQL function **to_char()**, which converts a date column to another format. In the problem they ask for the format 'YYYYY-MM', so that is the one I use in the function arguments.
 
