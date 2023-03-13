@@ -54,7 +54,7 @@ The **difficulty of the problem lies in the way the data is presented**, since i
 In order to obtain the total number of friends per user, it is necessary that all available users appear in a single column, with their respective friends in the other column.  Right now, the data is presented in this way: 
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_3.png" width = 400/>
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_3.png" width = 600/>
 </div>
 
 &nbsp;
@@ -80,7 +80,7 @@ WITH all_friends AS (
 Following the previous example (where 2 has 1 as a friend), we would see that the resulting table now also has the inverted pair (1 has 2 as a friend):
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_4.png" width = 400 />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_4.png" width = 600 />
 </div>
 
 &nbsp;
