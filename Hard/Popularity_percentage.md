@@ -43,6 +43,7 @@ ORDER BY
     user1;
 ```
 
+&nbsp;
 
 ## Explanation:
 
@@ -53,12 +54,12 @@ The **difficulty of the problem lies in the way the data is presented**, since i
 In order to obtain the total number of friends per user, it is necessary that all available users appear in a single column, with their respective friends in the other column.  Right now, the data is presented in this way: 
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_3.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_3.png" width = 400/>
 </div>
 
-In this record we see that user 2 has user 1 as a friend, but there is no record to indicate otherwise. That is, there is no record indicating that 1 has user 2 as a friend.
+&nbsp;
 
-To make the information be displayed in this way, we can join two tables, one as it originally is, and one with the columns reversed as shown in the following code snippet, in which I use UNION to join these two tables.
+In this record we see that user 2 has user 1 as a friend, but there is no record to indicate otherwise. That is, there is no record indicating that 1 has user 2 as a friend. To make the information be displayed in this way, we can **join two tables**, one as it originally is, and one with the columns reversed as shown in the following code snippet, in which I use UNION to join these two tables.
 
 ```sql
 WITH all_friends AS (
@@ -79,8 +80,10 @@ WITH all_friends AS (
 Following the previous example (where 2 has 1 as a friend), we would see that the resulting table now also has the inverted pair (1 has 2 as a friend):
 
 <div id="header" align="center">
-  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_4.png" />
+  <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_4.png" width = 400 />
 </div>
+
+&nbsp;
 
 Now, it remains to **calculate the percentage of popularity**. To do this, I use the **COUNT** function to count the number of total users and the number of friends of each user. It is important to note the use of the **DISTINCT** clause inside this function. This is because the table currently contains repeated users in both columns. I'm interested in getting the **total unique users of the table** and the **total unique friends of each user**.
 
@@ -96,9 +99,7 @@ ORDER BY
     user1;
 ```
 
-Since the expected output of the problem shows decimal values, I convert the number of friends to decimal. In addition, I multiply the result of the division by 100 to obtain the percentage value.
-
-Since an aggregation function has been used, I use a GROUP BY clause to group the results according to the user. Finally, I sort the table by user ID to obtain the expected result.
+Since the expected output of the problem shows decimal values, I convert the number of friends to decimal. In addition, I multiply the result of the division by 100 to obtain the percentage value. As an aggregation function has been used, I use a GROUP BY clause to group the results according to the user. Finally, I sort the table by user ID to obtain the expected result.
 
 <div id="header" align="center">
   <img src="https://github.com/MartaCasdelg/StrataScratch-SQL-Challenges/blob/main/Hard/Images/popularity_percentage_output.png" />
