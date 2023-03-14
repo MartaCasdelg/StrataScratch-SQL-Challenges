@@ -26,6 +26,7 @@ In this repository you will find my answers to the SQL challenges proposed on th
 * [Monthly Percentage Difference](./Hard/Monthly_percentage_difference.md)
 * [Premium vs Freemium](./Hard/Premium_vs_freemium.md)
 * [Popularity Percentage](./Hard/Popularity_percentage.md)
+* [Top 5 states with 5 star businesses](./Hard/Top_5_states_with_5_star_businesses.md)
 
 &nbsp;
 ## Feedback
