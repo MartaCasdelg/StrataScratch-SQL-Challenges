@@ -76,3 +76,17 @@ GROUP BY
     user1
 ORDER BY
     user1;
+
+
+
+-- Top 5 States With 5 Star Businesses
+SELECT
+    state,
+    COUNT(*) FILTER (WHERE stars = 5) AS five_stars_business
+FROM
+    yelp_business
+GROUP BY
+    state
+ORDER BY
+    COUNT(*) FILTER (WHERE stars = 5) DESC, state
+LIMIT 6;
